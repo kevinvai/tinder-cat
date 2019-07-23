@@ -25,12 +25,13 @@ class FavoritesContainer extends React.Component{
     }
 
     render(){
+        const {favs} = this.state;
         return(
             <div>
                 <h1>Favorites</h1>
                 <div className='tinderfavorites-container'> 
                     {
-                        this.state.favs.map(fav => <FavoriteCard key={fav.id} id={fav.id} imgSrc={fav.url} deleteFav={this.delete}/>)
+                        favs.map(({id, url}) => <FavoriteCard key={id} id={id} imgSrc={url} deleteFav={this.delete}/>)
                     }
                 </div>
             </div>
