@@ -11,6 +11,7 @@ class FavoritesContainer extends React.Component{
         } 
     }
 
+    //method to be called by children
     delete = async (id) => {
         await deleteFav(id);
         getFavs().then(favs => {
@@ -31,7 +32,7 @@ class FavoritesContainer extends React.Component{
                 <h1>Favorites</h1>
                 <div className='tinderfavorites-container'> 
                     {
-                        favs.map(({id, url}) => <FavoriteCard key={id} id={id} imgSrc={url} deleteFav={this.delete}/>)
+                        favs.map(({id, url}) => <FavoriteCard key={id} id={id} imgSrc={url} handleDelete={this.delete}/>)
                     }
                 </div>
             </div>

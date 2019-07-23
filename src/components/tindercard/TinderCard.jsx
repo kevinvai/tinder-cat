@@ -1,6 +1,6 @@
 import React from 'react'
 import {getRandomCatImg, addToFavorites} from '../../helperfunctions/api'
-import {loadingCircle} from '../../helperfunctions/animations'
+import LoadingCircle from '../loadingcircle/LoadingCircle'
 import './TinderCard.style.css'
 
 class TinderCard extends React.Component{
@@ -43,7 +43,7 @@ class TinderCard extends React.Component{
         return(
             <div className={isLoading ? 'tindercard-container-loading' : 'tindercard-container'}>           
                 {
-                    isLoading && loadingCircle
+                    isLoading && <LoadingCircle />
                 }
                 <img src={img.url} alt='cat'/>
                 <div className='button-container'>
