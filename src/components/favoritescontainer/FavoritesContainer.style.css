@@ -2,8 +2,10 @@
     width: 85vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .tinderfavorites-container h1{
