@@ -1,0 +1,13 @@
+.tinderfavorites-container{
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.tinderfavorites-container h1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 3em;
+}

@@ -1,0 +1,19 @@
+.tindercontainer-container{
+    display: flex;
+    justify-content: center;
+}
+
+.active{
+    background-color: black;
+    color: white;
+    padding: 27px;
+    width: 80px;
+    font-weight: bold;
+}
+
+.inactive{
+    padding: 27px;
+    width: 80px;
+    font-weight: bold;
+    font-size: 20px;
+}
