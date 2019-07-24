@@ -22,9 +22,9 @@ const addToFavorites = (id) => {
 }
 
 const getFavs = () => {
-    const url2 = `${baseUrl}/fav`
+    const url = `${baseUrl}/fav`
 
-    return fetch(url2, {
+    return fetch(url, {
         headers: headers
     }).then(response => response.json())
 }
