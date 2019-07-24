@@ -7,11 +7,11 @@ const headers = {
 //api endpoints
 const getRandomCatImg = () => {
     return fetch(baseUrl, {
-        headers: {'api_key': 'g00dLuCk',}
+        headers: headers
     }).then(response => response.json())
 }
 
-const addToFavorites = async (id) => {
+const addToFavorites = (id) => {
     //post to API   
     const url = `${baseUrl}/fav/${id}`;  
     //fetch logic
